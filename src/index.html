@@ -6,12 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Vanilla JavaScript App</title>
+  <script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
 </head>
 
 <body>
+  <div id="Page1">
   <main>
-    <h1>Vanilla JavaScript App</h1>
+    <h1>Hello Friends!</h1>
   </main>
+  <div>
+  <p>   Let's start the journey!</p>
+  </div>
+  <div>
+  <p>   My name is My Anh Huynh.</p>
+    </div>
+  <div>
+  <p>  I am a senior student which major in Computer Science!<br/>
+       My goal is applying technology to solve several modern issues in the world.
+    </p>
+    </div>
+  <div>
+  <p> Created for my SWE 4633 class</p>
+    </div>
+   <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+   <div id="Page2" style="display:none">
+     <p> Gorgous image <br/>
+       <img src="https://raw.githubusercontent.com/MYANH2020/assignment1/main/flower1.jpeg" alt="Flower" width="500" height="600">
+     </p>
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
 </body>
 
 </html>
